@@ -59,7 +59,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin: 2rem auto; /* Centering with margin */
+    margin: 2rem auto;
 }
 
 /* Title */
@@ -121,6 +121,7 @@ h4 {
     width: 100%;
     max-width: 200px;
     font-size: 1rem;
+    margin-bottom: .5rem;
 }
 
 .link-btn i {
@@ -168,23 +169,22 @@ h4 {
         font-size: 0.9rem;
     }
 
-    /* Adjust profile container */
     .profile-container {
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 2rem 1.5rem; /* Increased bottom padding to 2rem */
         max-width: 100%;
         margin: 1rem 0.5rem;
+        /* CHANGE THIS LINE: Adjust '2rem' in padding (e.g., 2.5rem, 3rem) for more space below buttons */
     }
 
-    /* Stack buttons in a column */
     .links {
         flex-direction: column;
         align-items: center;
-        gap: 1rem; /* Adjust gap for column layout */
+        gap: 1rem;
     }
 
     .link-btn {
-        max-width: 250px; /* Slightly wider buttons in column */
-        width: 100%; /* Full width of container */
+        max-width: 250px;
+        width: 100%;
     }
 }
 
@@ -206,12 +206,13 @@ h4 {
     .link-btn {
         padding: 0.7rem 1.2rem;
         font-size: 0.8rem;
-        max-width: 200px; /* Adjust for smaller screens */
+        max-width: 200px;
     }
 
     .profile-container {
-        padding: 1rem;
+        padding: 1rem 1rem 3rem 1rem; /* Increased bottom padding to 1.5rem */
         margin: 0.5rem 0.25rem;
+        /* CHANGE THIS LINE: Adjust '1.5rem' in padding (e.g., 2rem, 2.5rem) for more space below buttons */
     }
 
     .links {
@@ -240,10 +241,11 @@ h4 {
     }
 
     .profile-container {
-        padding: 0.75rem;
+        padding: 0.75rem 0.75rem 1.25rem 0.75rem; /* Increased bottom padding to 1.25rem */
         margin: 0 0.25rem;
         max-width: 100%;
         box-sizing: border-box;
+        /* CHANGE THIS LINE: Adjust '1.25rem' in padding (e.g., 1.5rem, 2rem) for more space below buttons */
     }
 
     .landing {
