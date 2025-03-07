@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #1a1a1a;
     color: #fff;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Background Image */
@@ -59,6 +59,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin: 2rem auto; /* Centering with margin */
 }
 
 /* Title */
@@ -75,7 +76,6 @@ body {
     margin: 0;
 }
 
-
 /* Subtitle (h4) */
 h4 {
     font-size: 1.2rem;
@@ -87,8 +87,7 @@ h4 {
 }
 
 /* Paragraph (p) */
-.copyright-text 
-    {
+.copyright-text {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.219);
     margin: 0.5rem 0;
@@ -168,6 +167,25 @@ h4 {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
+
+    /* Adjust profile container */
+    .profile-container {
+        padding: 1.5rem;
+        max-width: 100%;
+        margin: 1rem 0.5rem;
+    }
+
+    /* Stack buttons in a column */
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Adjust gap for column layout */
+    }
+
+    .link-btn {
+        max-width: 250px; /* Slightly wider buttons in column */
+        width: 100%; /* Full width of container */
+    }
 }
 
 @media (max-width: 480px) {
@@ -182,11 +200,58 @@ h4 {
 
     h4 {
         font-size: 0.9rem;
+        max-width: 100%;
     }
 
     .link-btn {
         padding: 0.7rem 1.2rem;
         font-size: 0.8rem;
+        max-width: 200px; /* Adjust for smaller screens */
+    }
+
+    .profile-container {
+        padding: 1rem;
+        margin: 0.5rem 0.25rem;
+    }
+
+    .links {
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 0.85rem;
+    }
+
+    .link-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+        max-width: 180px;
+    }
+
+    .profile-container {
+        padding: 0.75rem;
+        margin: 0 0.25rem;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .landing {
+        padding: 0.5rem;
+    }
+
+    .links {
+        gap: 0.5rem;
     }
 }
 
